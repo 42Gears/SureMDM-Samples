@@ -1,0 +1,11 @@
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\Refresh_device_apps.exe.config
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\Refresh_device_apps.exe
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\Refresh_device_apps.pdb
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\Newtonsoft.Json.dll
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\RestSharp.dll
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\Newtonsoft.Json.xml
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\bin\Debug\RestSharp.xml
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\obj\Debug\Refresh_device_apps.csproj.CoreCompileInputs.cache
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\obj\Debug\Refresh_device_apps.csproj.CopyComplete
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\obj\Debug\Refresh_device_apps.exe
+C:\Users\salmahusen\source\repos\C-Sharp\Refresh_device_apps\obj\Debug\Refresh_device_apps.pdb

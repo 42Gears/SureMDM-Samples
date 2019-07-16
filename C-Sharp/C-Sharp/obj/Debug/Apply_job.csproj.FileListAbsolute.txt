@@ -1,0 +1,12 @@
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\obj\Debug\Apply_job.csprojAssemblyReference.cache
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\obj\Debug\Apply_job.csproj.CoreCompileInputs.cache
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\C-Sharp.exe.config
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\C-Sharp.exe
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\C-Sharp.pdb
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\Newtonsoft.Json.dll
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\RestSharp.dll
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\Newtonsoft.Json.xml
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\bin\Debug\RestSharp.xml
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\obj\Debug\Apply_job.csproj.CopyComplete
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\obj\Debug\C-Sharp.exe
+C:\Users\salmahusen\source\repos\C-Sharp\C-Sharp\obj\Debug\C-Sharp.pdb
