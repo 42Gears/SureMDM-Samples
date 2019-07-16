@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D23103B9-60C1-4E72-998A-6071031C5F0C}</ProjectGuid>
+    <ProjectGuid>{296ABEEB-EF1E-4A0F-82C2-87C1BA15255D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Reapply_pending_job</RootNamespace>
     <AssemblyName>Reapply_pending_job</AssemblyName>
@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Reapply_job.cs" />
+    <Compile Include="Reapply_pending_job.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

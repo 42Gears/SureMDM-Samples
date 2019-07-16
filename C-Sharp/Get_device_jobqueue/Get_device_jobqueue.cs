@@ -22,7 +22,7 @@ namespace Get_device_jobqueue
             string DeviceID = GetDeviceID("Client0437");
             if (DeviceID != null)
             {
-                string status = jobqueue(DeviceID,true);
+                string status = jobqueue(DeviceID, true);
                 Console.WriteLine(status);
             }
             else

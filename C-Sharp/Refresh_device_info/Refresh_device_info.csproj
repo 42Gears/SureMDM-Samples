@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CF62D056-8DA3-4AF6-B12D-ED9E3510EF88}</ProjectGuid>
+    <ProjectGuid>{064949B2-D754-4CDE-A946-956931B2C00C}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Refresh_device_info</RootNamespace>
     <AssemblyName>Refresh_device_info</AssemblyName>

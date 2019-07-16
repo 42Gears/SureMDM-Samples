@@ -45,7 +45,7 @@ namespace Reapply_pending_job
                      ApiKey: “Your Api-Key”
              */
 
-            string URL = baseurl+"/jobqueue/" + deviceID + "/" + bShowAll;
+            string URL = baseurl + "/jobqueue/" + deviceID + "/" + bShowAll;
             var client = new RestClient(URL);
             //  Basic authentication header
             client.Authenticator = new HttpBasicAuthenticator(Username, Password);

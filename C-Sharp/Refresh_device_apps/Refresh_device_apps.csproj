@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{15164626-7023-4CD4-9E71-B63BF0606D4E}</ProjectGuid>
+    <ProjectGuid>{BA158A19-A8DE-437C-964B-5AA9B44EA925}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Refresh_device_apps</RootNamespace>
     <AssemblyName>Refresh_device_apps</AssemblyName>

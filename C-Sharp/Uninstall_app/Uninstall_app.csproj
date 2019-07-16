@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B6ED45A7-5271-455D-A7EE-334896CCBB28}</ProjectGuid>
+    <ProjectGuid>{AF890C71-8182-47A3-BFDF-430D5A6310AB}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Uninstall_app</RootNamespace>
     <AssemblyName>Uninstall_app</AssemblyName>

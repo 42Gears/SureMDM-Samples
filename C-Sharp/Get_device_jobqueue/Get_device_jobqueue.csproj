@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F6397B41-3EE5-4CE5-B0F9-0C22A458C4E4}</ProjectGuid>
+    <ProjectGuid>{3CFFFA1C-44FC-4021-A920-75F42C99AEA5}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Get_device_jobqueue</RootNamespace>
     <AssemblyName>Get_device_jobqueue</AssemblyName>
@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Device_Jobqueue.cs" />
+    <Compile Include="Get_device_jobqueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
