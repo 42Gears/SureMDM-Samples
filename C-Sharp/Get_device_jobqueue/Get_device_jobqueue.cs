@@ -14,12 +14,12 @@ namespace Get_device_jobqueue
     class Device_Jobqueue
     {
         public static string baseurl = "https://suremdm.42gears.com/api";
-        private static string Username = "sa";
-        private static string Password = "0000";
-        private static string ApiKey = "37A007A7-5D12-4D14-974E-B211F8F378EA";
+        private static string Username = "Username";
+        private static string Password = "Password";
+        private static string ApiKey = "Your ApiKey";
         static void Main(string[] args)
         {
-            string DeviceID = GetDeviceID("Client0437");
+            string DeviceID = GetDeviceID("Device_Name");
             if (DeviceID != null)
             {
                 string status = jobqueue(DeviceID, true);

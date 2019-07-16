@@ -12,18 +12,18 @@ namespace Uninstall_app
     class Uninstall_app
     {
         public static string baseurl = "https://suremdm.42gears.com/api";
-        private static string Username = "sa";
-        private static string Password = "0000";
-        private static string ApiKey = "37A007A7-5D12-4D14-974E-B211F8F378EA";
+        private static string Username = "Username";
+        private static string Password = "Password";
+        private static string ApiKey = "Your ApiKey";
         static void Main(string[] args)
         {
 
             // Retrieve Device ID
-            string DeviceID = GetDeviceID("Client0446");
+            string DeviceID = GetDeviceID("Device_Name");
             if (DeviceID != null)
             {
                 // Uninstall app
-                string status = UninstallApplication(DeviceID, "Phone Testing");
+                string status = UninstallApplication(DeviceID, "Application_Name");
                 Console.WriteLine(status);
             }
             else
