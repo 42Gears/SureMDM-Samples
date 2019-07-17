@@ -68,7 +68,7 @@ namespace Uninstall_app
             // convert payload to base64 string
             var PayLoadbytes = System.Text.Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(PayLoad));
             var PayLoadBase64 = System.Convert.ToBase64String(PayLoadbytes);
-            // Request payload for refreshing device
+            // Request payload for uninstalling the app
             var RequestPayLoad = new
             {
                 JobType = "UNINSTALL_APPLICATION",
