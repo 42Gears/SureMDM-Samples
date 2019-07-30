@@ -1,7 +1,7 @@
 # This program re-applies all pending jobs from device job queue
 import requests,json
 
-baseurl="https://suremdm.42gears.com/api"
+baseurl="https://suremdm.42gears.com/api"  # BaseURL of SureMDM
 Username="Username"
 Password="Password"
 ApiKey="Your ApiKey"
@@ -54,9 +54,9 @@ def GetDeviceID(deviceName):
     if response.status_code == 200:
         if response.text != '[]':
             data = response.json()
-            for group in data['rows']:
-                if group['DeviceName'] == deviceName:
-                    return group["DeviceID"]
+            for device in data['rows']:
+                if device['DeviceName'] == deviceName:
+                    return device["DeviceID"]
     else:
         return None
 

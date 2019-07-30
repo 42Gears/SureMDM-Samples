@@ -11,7 +11,7 @@ namespace Uninstall_app
 {
     class Uninstall_app
     {
-        public static string baseurl = "https://suremdm.42gears.com/api";
+        public static string baseurl = "https://suremdm.42gears.com/api"; // BaseURL of SureMDM
         private static string Username = "Username";
         private static string Password = "Password";
         private static string ApiKey = "Your ApiKey";

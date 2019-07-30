@@ -13,7 +13,7 @@ namespace Reboot_device
 {
     class Reboot_device
     {
-        public static string baseurl = "https://suremdm.42gears.com/api";
+        public static string baseurl = "https://suremdm.42gears.com/api"; // BaseURL of SureMDM
         private static string Username = "Username";
         private static string Password = "Password";
         private static string ApiKey = "Your ApiKey";

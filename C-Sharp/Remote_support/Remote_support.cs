@@ -4,53 +4,41 @@ using RestSharp;
 using RestSharp.Authenticators;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Refresh_device_info
+namespace Remote_support
 {
-    class Refresh_device_info
+    class Remote_support
     {
         public static string baseurl = "https://suremdm.42gears.com/api"; // BaseURL of SureMDM
-        private static string Username = "Username";
-        private static string Password = "Password";
-        private static string ApiKey = "Your ApiKey";
+        private static string Username = "cookie";
+        private static string Password = "42gears";
+        private static string ApiKey = "45EE566A-7108-4B46-A5E4-A24CF56DA460";
         static void Main(string[] args)
         {
-            string DeviceID = GetDeviceID("Device_Name");
-            if (DeviceID != null)
-            {
-                // Refreshing device
-                string status = RefreshDevice(DeviceID);
-                Console.WriteLine(status);
-            }
-            else
-            {
-                Console.WriteLine("Device not found!");
-            }
+            // Generate remote support URL for device
+            string URL = GetRemoteSupportURL("lenovo rj");
+            Console.WriteLine(URL);
             Console.ReadKey();
         }
-
-        // Function to refresh device info
-        private static string RefreshDevice(string deviceID)
+        private static string GetRemoteSupportURL(string deviceName)
         {
-            /* Api to apply dynamic jobs
-                Endpoint: /dynamicjob
-                Method: POST
-                Request Body:
-                   {
-                       "JobType":string,
-                       "DeviceID":string
-                   }
-                Authentication:
-                    Basic authentication
-                Headers:
-                    ApiKey: “Your Api-Key”
-            */
+            // Retrieving ID of the device
+            string DeviceID = GetDeviceID(deviceName);
 
-            string URL = baseurl + "/dynamicjob";
+            /*  Retreiving Id, name, uerID, pltFrmType, agentversion of the device
+                 Endpoint: /api/device/{DeviceID}:
+                 Method: GET
+                 Authentication:
+                     Basic authentication
+                 Headers:
+                     ApiKey: “Your Api-Key” 
+            */
+            string URL = baseurl+"/device/"+DeviceID;
             var client = new RestClient(URL);
             // Basic authentication header
             client.Authenticator = new HttpBasicAuthenticator(Username, Password);
@@ -59,23 +47,35 @@ namespace Refresh_device_info
             // Set content type
             client.AddDefaultHeader("Content-Type", "application/json");
             // Set request method
-            var request = new RestRequest(Method.POST);
-
-            // Request payload for refreshing device
-            var RequestPayLoad = new
-            {
-                JobType = "Refresh_Device",
-                DeviceID = deviceID
-            };
-            request.AddJsonBody(RequestPayLoad);
-
-            // Execute request
+            var request = new RestRequest(Method.GET);
+            // Getting response
             IRestResponse response = client.Execute(request);
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var OutPut = JsonConvert.DeserializeObject(response.Content);
+                List<JObject> jsonResponse = JsonConvert.DeserializeObject<List<JObject>>(response.Content);
+                var a = jsonResponse.Any();
+                if ((jsonResponse != null) && (jsonResponse.Any()))
+                {
+                    foreach (var device in jsonResponse)
+                    {
+                        if (device.GetValue("DeviceName").ToString() == deviceName)
+                        {
+                            string remoteSupporturl = "https://suremdm.42gears.com" + "/RemoteSupport.aspx?" +
+                                "id=" + device.GetValue("DeviceID").ToString() +
+                                "&name=" + device.GetValue("DeviceName").ToString() +
+                                "&userid=" + device.GetValue("UserID").ToString() +
+                                "&pltFrmType=" + device.GetValue("PlatformType").ToString() +
+                                "&agentversion=" + device.GetValue("AgentVersion").ToString() +
+                                "&perm=126,127,128,129";
 
-            return response.Content.ToString();
+                            return remoteSupporturl;
+                        }
+                    }
+                }
+            }
+            return null;
         }
-
-        // Function to retrieve ID of the device
         private static string GetDeviceID(string deviceName)
         {
             /*  Retreiving information of device

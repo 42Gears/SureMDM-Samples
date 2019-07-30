@@ -1,0 +1,12 @@
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\obj\Debug\Remote_support.csprojAssemblyReference.cache
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\obj\Debug\Remote_support.csproj.CoreCompileInputs.cache
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\Remote_support.exe.config
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\Remote_support.exe
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\Remote_support.pdb
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\Newtonsoft.Json.dll
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\RestSharp.dll
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\Newtonsoft.Json.xml
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\bin\Debug\RestSharp.xml
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\obj\Debug\Remote_support.csproj.CopyComplete
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\obj\Debug\Remote_support.exe
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Remote_support\obj\Debug\Remote_support.pdb
