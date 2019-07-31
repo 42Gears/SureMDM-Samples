@@ -21,7 +21,7 @@ public class Uninstall_app
 		String DeviceID = GetDeviceID("Device_Name");
 		if (DeviceID != null)
 		{
-			String status = UninstallApplication(DeviceID, "Open Flashlight");
+			String status = UninstallApplication(DeviceID, "Application_name");
 			//String status = GetAppID(DeviceID, "Ludo King");
 			System.out.print(status);
 		}

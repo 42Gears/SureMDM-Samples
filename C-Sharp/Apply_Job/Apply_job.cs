@@ -25,7 +25,7 @@ namespace Apply_job
             }
             else
             {
-                Console.WriteLine("Device not found");
+                Console.WriteLine("Device not found!");
             }
 
             Console.ReadKey();

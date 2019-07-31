@@ -15,13 +15,13 @@ namespace Remote_support
     class Remote_support
     {
         public static string baseurl = "https://suremdm.42gears.com/api"; // BaseURL of SureMDM
-        private static string Username = "cookie";
-        private static string Password = "42gears";
-        private static string ApiKey = "45EE566A-7108-4B46-A5E4-A24CF56DA460";
+        private static string Username = "Username";
+        private static string Password = "Password";
+        private static string ApiKey = "Your Api-Key";
         static void Main(string[] args)
         {
             // Generate remote support URL for device
-            string URL = GetRemoteSupportURL("lenovo rj");
+            string URL = GetRemoteSupportURL("Device_name");
             Console.WriteLine(URL);
             Console.ReadKey();
         }

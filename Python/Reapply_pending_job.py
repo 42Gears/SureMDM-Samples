@@ -122,4 +122,4 @@ if DeviceID!=None:
     status=JobQueue(DeviceID,False)
     print(status)
 else:
-    print('Device not found')
+    print('Device not found!')

@@ -100,4 +100,4 @@ if DeviceID!=None:
     status=RefreshDeviceInfo(DeviceID)
     print(status)
 else:
-    print('Device not found')
+    print('Device not found!')

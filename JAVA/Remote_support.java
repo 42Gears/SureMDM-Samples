@@ -16,7 +16,7 @@ public class Remote_support
 
 	public static void main(String[] args) throws Exception
 	{
-		String RemoteURL = GetRemoteSupportURL("lenovo rj");
+		String RemoteURL = GetRemoteSupportURL("Device_name");
 		System.out.println(RemoteURL);
 	}
 

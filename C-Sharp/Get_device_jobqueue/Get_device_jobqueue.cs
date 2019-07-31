@@ -27,7 +27,7 @@ namespace Get_device_jobqueue
             }
             else
             {
-                Console.WriteLine("Device not found");
+                Console.WriteLine("Device not found!");
             }
             Console.ReadKey();
         }

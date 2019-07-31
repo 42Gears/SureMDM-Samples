@@ -7,6 +7,7 @@ Username = "Username"
 Password = "Password"
 ApiKey = "Your ApiKey"
 
+
 def GetDeviceID(deviceName):
     '''
     Retreiving information of device
@@ -98,6 +99,7 @@ def GetRemoteSupportURL(deviceName):
     else:
         return None
 
+
 # Generate remote support URL for device
-URL = GetRemoteSupportURL("lenovo rj")
+URL = GetRemoteSupportURL("Device name")
 print(URL)
