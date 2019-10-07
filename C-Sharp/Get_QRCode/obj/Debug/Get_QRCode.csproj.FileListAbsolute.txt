@@ -1,0 +1,12 @@
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\Get_QRCode.exe.config
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\Get_QRCode.exe
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\Get_QRCode.pdb
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\Newtonsoft.Json.dll
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\RestSharp.dll
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\Newtonsoft.Json.xml
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\bin\Debug\RestSharp.xml
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\obj\Debug\Get_QRCode.csprojAssemblyReference.cache
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\obj\Debug\Get_QRCode.csproj.CoreCompileInputs.cache
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\obj\Debug\Get_QRCode.csproj.CopyComplete
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\obj\Debug\Get_QRCode.exe
+D:\CODEBASE\SureMDM-Samples\C-Sharp\Get_QRCode\obj\Debug\Get_QRCode.pdb

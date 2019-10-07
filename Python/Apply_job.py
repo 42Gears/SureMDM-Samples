@@ -1,3 +1,4 @@
+
 import requests,json
 
 baseurl="https://suremdm.42gears.com/api"  # BaseURL of SureMDM
@@ -93,7 +94,7 @@ def GetFolderID(folderName):
                     return folder['FolderID']
             return 'null'
     else:
-        return "null"
+        return "null" # folder ID for default folder is 'null'
 
 # Method for getting ID of the job
 def GetJobID(jobName,folderID):
