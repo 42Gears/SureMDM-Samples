@@ -1,3 +1,6 @@
+/*
+Code for generating QR code to enroll device in particular group on SureMDM account.
+*/
 import java.io.FileOutputStream;
 import java.io.OutputStream;
 import java.nio.charset.StandardCharsets;
@@ -25,7 +28,7 @@ public class Get_QRCode
 		{
 			// Store QR code image in file
 			byte[] imageFile = Base64.getDecoder().decode(base64String);
-			try (OutputStream stream = new FileOutputStream("File path"))  //File path i.e:D:\\QRcode.png
+			try (OutputStream stream = new FileOutputStream("File path"))  //File path i.e: "D:\\QRcode.png"
 			{
 				stream.write(imageFile);
 			}

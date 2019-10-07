@@ -1,13 +1,20 @@
-import requests,json,base64
+'''
+Code for generating QR code to enroll device in particular group on SureMDM account.
+'''
 
-baseurl = "http://suremdm.42gears.com" # BaseURL of SureMDM
-Username="Username"
-Password="Password"
-ApiKey="Your ApiKey"
+import requests
+import json
+import base64
+
+baseurl = "http://suremdm.42gears.com"  # BaseURL of SureMDM
+Username = "Username"
+Password = "Password"
+ApiKey = "Your ApiKey"
+
 
 def GetGroupID(groupName):
     # For home group no need to get groupID
-    if groupName.casefold() == "Home":  
+    if groupName.casefold() == "Home":
         return groupName
 
     '''
@@ -28,11 +35,11 @@ def GetGroupID(groupName):
         'ApiKey': ApiKey,
         # Set Content type
         'Content-Type': "application/json",
-        }
+    }
     # Basic authentication credentials
-    Credentials=(Username,Password)
+    Credentials = (Username, Password)
     # Executing request
-    response = requests.get(url,auth=Credentials,headers=headers)
+    response = requests.get(url, auth=Credentials, headers=headers)
     # Extracting required GroupID
     if response.status_code == 200:
         data = response.json()
@@ -42,8 +49,9 @@ def GetGroupID(groupName):
     else:
         return None
 
+
 def GetQRCode(groupName):
-    GroupID=GetGroupID(groupName)
+    GroupID = GetGroupID(groupName)
     '''
     Retreiving QRCode for enrolling device in particular group
         Endpoint: /QRCode/{GroupID}/default/true/UseSystemGenerated
@@ -56,18 +64,19 @@ def GetQRCode(groupName):
             ApiKey: “Your Api-Key”
     '''
     # Api url
-    url = baseurl + "/QRCode/" + str(GroupID) + "/default/true/UseSystemGenerated"
+    url = baseurl + "/QRCode/" + \
+        str(GroupID) + "/default/true/UseSystemGenerated"
     # Add headers
     headers = {
         # Api-Key header
         'ApiKey': ApiKey,
         # Set Content type
         'Content-Type': "application/json",
-        }
+    }
     # Basic authentication credentials
-    Credentials=(Username,Password)
+    Credentials = (Username, Password)
     # Executing request
-    response = requests.get(url,auth=Credentials,headers=headers)
+    response = requests.get(url, auth=Credentials, headers=headers)
     # Extracting required GroupID
     if response.status_code == 200:
         return response.text
@@ -77,11 +86,10 @@ def GetQRCode(groupName):
 
 # Main starts
 # Get base64 QRcode
-base64String=GetQRCode("Group Name")
-base64String=base64String.replace("\"","")
-if base64String!=None:
-    with open("File Path", "wb") as stream:        # File path i.e:D:\\QRcode.png
+base64String = GetQRCode("Group Name")
+base64String = base64String.replace("\"", "")
+if base64String != None:
+    with open("File Path", "wb") as stream:        # File path i.e: "D:\\QRcode.png"
         stream.write(base64.b64decode(base64String))
 else:
     print("Invalid request!")
-

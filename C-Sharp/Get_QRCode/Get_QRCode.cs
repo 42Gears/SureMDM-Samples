@@ -1,4 +1,8 @@
-﻿using Newtonsoft.Json;
+﻿/*
+Code for generating QR code to enroll device in particular group on SureMDM account.
+*/
+
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using RestSharp;
 using RestSharp.Authenticators;
